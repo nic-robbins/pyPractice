@@ -153,9 +153,12 @@ while True:
     print("  1.  Play Game         2.  Quit Game       \n")
     menu = input("Press 1 to play or press any other key to quit: ")
     if menu == "1":
-      deal()
+      user_name = input("Please enter your player name: ")
+      player1 = User(user_name)
+        # welcome message calling on the player1 object with User class.
+      print("\nWelcome", player1.name)
+      deal()  # initiates the game play.
     else:
       print("\nGoodbye.")
       break
 
-  # initiates the game play.
